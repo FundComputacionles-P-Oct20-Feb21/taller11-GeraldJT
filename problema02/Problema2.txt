@@ -1,0 +1,39 @@
+1. Inicio
+2. funcion Principal()
+3. nota1, d[0,n]
+4. nota2, d[0,n]
+5. nota3, d[0,n]
+6. nota4, d[0,n]
+7. mensajeF, x(20)[{a-z}, {BS}]
+8. Escribir "Ingresar la primera nota"
+9. Leer nota1
+10. Escribir "Ingresar la segunda nota"
+11. Leer nota2
+12. Escribir "Ingresar la tercera nota"
+12. Leer nota3
+14. Escribir "Ingresar la cuarta nota"
+15. Leer nota1
+16. mensajeF <-- promedioCualitativo( nota1, nota2, nota3, nota4)
+17. Escribir mensajeF
+18. Fin funcion Principal
+19.
+20. funcion promedioCualitativo (w, i[0,n]; x, i[0,n]; y, i[0,n], z, i[0,n])
+21. cadenaF, x(20)[{a-z}, {BS}]
+22. promedio, d[0,n]
+23. promedio <-- (w + x + y + z) / 4
+24. Si ((promedio >= 0) AND ( promedio <= 5)) entonces
+25. 	cadenaF <-- cadenaF + "El promedio de las notas:" + w + x + y + z + "es Regular"
+26. 	De lo contrario
+27.		Si ((promedio >= 5.1) AND ( promedio <= 8)) entonces
+28.		cadenaF <-- cadenaF + "El promedio de las notas:" + w + x + y + z + "es Bueno"
+29.		De lo contrario
+30.			Si ((promedio >= 8.1) AND ( promedio <= 9)) entonces
+31.			cadenaF <-- cadenaF + "El promedio de las notas:" + w + x + y + z + "es Muy Bueno"
+32.			De lo contrario
+33.				Si ((promedio >= 9.1) AND ( promedio <= 10)) entonces
+34.				cadenaF <-- cadenaF + "El promedio de las notas:" + w + x + y + z + "es Sobresaliente"
+35. Fin si
+36. return cadenaF
+37. Fin funcion promedioCualitativo
+38.
+39. Fin											    
